@@ -14,6 +14,7 @@ def student_gwa_reader():
         # find the key with the lowest value (lowest value = highest gwa) in student_gwa dictionary
         highest_gwa_name = min(student_gwa, key=student_gwa.get)
         # get the key with the lowest value in student_gwa dictionary
+        highest_gwa = student_gwa[highest_gwa_name]
     # print the result
 
 
