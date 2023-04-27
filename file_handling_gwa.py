@@ -7,7 +7,10 @@ def student_gwa_reader():
         # create empty dictionary
         student_gwa = {}
         # loop through each line in students_gwa.txt
+        for line in file_1:
             # split the line into name and gwa and convert gwa to float
+            name, gwa = line.strip().split(",")
+            student_gwa[name] = float(gwa)
         # find the key with the lowest value (lowest value = highest gwa) in student_gwa dictionary
         # get the key with the lowest value in student_gwa dictionary
     # print the result
